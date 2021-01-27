@@ -41,5 +41,11 @@ public class InvoiceSummary {
 		if (Double.doubleToLongBits(totalFare) != Double.doubleToLongBits(other.totalFare))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "InvoiceSummary [numberOfRides=" + numberOfRides + ", totalFare=" + totalFare + ", averageFare="
+				+ averageFare + "]";
 	}	
 }
