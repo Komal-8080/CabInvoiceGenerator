@@ -1,18 +1,14 @@
 package InvoiceService;
 
-import InvoiceService.InvoiceService.RideMode;
-
 public class Ride {
-	
-	
+
 	public double distance;
 	public int time;
-	public static InvoiceService.RideMode rideMode;
+	public CabRide cabRide;
 
-	public Ride(double distance, int time, InvoiceService.RideMode rideMode) {
+	public Ride(CabRide cabRide, double distance, int time) {
 		this.distance = distance;
 		this.time = time;
-		this.rideMode = rideMode;
+		this.cabRide = cabRide;
 	}
-
 }
